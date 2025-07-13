@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    volumes:
+      - .:/var/www/html
+    environment:
+      - PHP_ALLOW_XDEBUG=1
+      - PHP_ALLOW_URL_FOPEN=1
+      - PHP_ALLOW_URL_INCLUDE=1
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=digital_legacy_vault
+      - DB_USERNAME=root
+      - DB_PASSWORD=root
+    depends_on:
+      - db
+    working_dir: /var/www/html
+
+  db:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=digital_legacy_vault
+      - MYSQL_USER=docker
+      - MYSQL_PASSWORD=docker
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
+
+volumes:
+  db_data:
