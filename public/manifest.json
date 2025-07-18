@@ -1,0 +1,21 @@
+{
+  "name": "Digital Legacy Vault",
+  "short_name": "Vault",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "Secure digital legacy management system",
+  "icons": [
+    {
+      "src": "/assets/images/icons/vault-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icons/vault-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#007FFF"
+}

@@ -1,0 +1,8 @@
+# Code owners for the Digital Legacy Vault project
+# Format: Digital_Legacy_Vault @Alpha0-1
+
+* @project-maintainer
+/app/Http/Controllers/Api/ @Alpha0-1
+/app/Services/ @Alpha0-1
+/app/Models/ @Alpha0-1
+/resources/views/ @Alpha0-1

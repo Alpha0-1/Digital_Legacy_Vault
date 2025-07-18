@@ -1,0 +1,43 @@
+# Laravel
+.env
+.DS_Store
+*.key
+*.crt
+*.csr
+*.pem
+*.crl
+*.p7b
+*.p7c
+*.p12
+*.pfx
+*.pem
+*.crt
+*.key
+*.csr
+*.pem
+*.crl
+*.p7b
+*.p7c
+*.p12
+*.pfx
+
+# Node
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# PHP
+/vendor/
+/patch/
+phpunit.xml
+.php_cs.dist
+
+# Misc
+/.idea
+/.vscode
+/.vagrant
+Homestead.json
+Homestead.yaml
+.env.testing

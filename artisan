@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+define('LARAVEL_START', microtime(true));
+
+require __DIR__.'/vendor/autoload.php';
+
+$buffer = new \Symfony\Component\Console\Output\BufferedOutput;
+$artisan = require __DIR__.'/bootstrap/artisan.php';
+
+$artisan->run();

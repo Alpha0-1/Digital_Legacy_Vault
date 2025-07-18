@@ -1,0 +1,4 @@
+Contact: security@digitallegacy.io
+Encryption: https://digitallegacy.io/security/encryption-standards 
+Policy: https://digitallegacy.io/security/disclosure-policy 
+Hiring: https://digitallegacy.io/careers/security-engineer 

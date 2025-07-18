@@ -1,0 +1,9 @@
+# robots.txt for Digital Legacy Vault
+User-agent: *
+Disallow: /admin/
+Disallow: /vault/
+Disallow: /beneficiaries/
+Disallow: /inactivity/
+Disallow: /profile/
+Disallow: /dashboard/
+Sitemap: {{ config('app.url') }}/sitemap.xml

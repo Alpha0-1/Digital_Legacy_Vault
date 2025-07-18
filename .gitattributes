@@ -1,0 +1,12 @@
+*.php linguist-language=PHP
+*.js linguist-language=JavaScript
+*.vue linguist-language=Vue
+*.md linguist-language=Markdown
+*.css linguist-language=CSS
+*.json linguist-language=JSON
+*.html linguist-language=HTML
+*.env filter=lfs diff=lfs merge=lfs -text
+*.env.testing filter=lfs diff=lfs merge=lfs -text
+*.key filter=lfs diff=lfs merge=lfs -text
+*.pem filter=lfs diff=lfs merge=lfs -text
+*.p12 filter=lfs diff=lfs merge=lfs -text

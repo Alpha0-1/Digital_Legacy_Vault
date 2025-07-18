@@ -1,0 +1,21 @@
+; Development PHP configuration for Digital Legacy Vault
+extension=mysqli
+extension=pdo_mysql
+extension=opcache
+extension=gd
+extension=xdebug
+
+post_max_size = 20M
+upload_max_filesize = 15M
+
+opcache.enable=1
+opcache.enable_cli=1
+opcache.memory_consumption=128
+opcache.validate_timestamps=1
+opcache.save_comments=1
+opcache.enable_file_override=0
+
+session.cookie_secure=1
+session.use_only_cookies=1
+session.cookie_httponly=1
+session.cookie_samesite=strict
